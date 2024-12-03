@@ -1,0 +1,259 @@
+// Base & RTL Support
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+body {
+  background-image: url('../../public/images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+// Layout Components
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+// Header & Navigation
+header {
+  background-color: rgba(248, 249, 250, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  .logo {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .contact-buttons {
+    margin: 1rem 0;
+    
+    .btn {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.navbar {
+  background-color: rgba(248, 249, 250, 0.95) !important;
+  
+  .dropdown-menu {
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+}
+
+// Service Cards - Combined and Optimized
+.service-card {
+  margin-bottom: 2rem;
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    .image-container {
+      flex: 0 0 350px;
+      position: relative;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    
+    .content-container {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        color: #333;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .features-list {
+    margin-top: 1.5rem;
+    
+    li {
+      margin-bottom: 0.8rem;
+      padding-right: 1rem;
+      color: #555;
+      
+      &:before {
+        content: "•";
+        color: #007bff;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .card {
+      flex-direction: column;
+      
+      .image-container {
+        flex: none;
+        
+        img {
+          height: 250px;
+          border-radius: 8px 8px 0 0;
+        }
+      }
+    }
+  }
+}
+
+// Body Repair Card
+.body-repair-card {
+  margin-bottom: 2rem;
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; // יחס גובה לרוחב 3:4
+    overflow: hidden;
+    
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-body {
+    padding: 1.5rem;
+    text-align: center;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .body-repair-card {
+    .card-body {
+      padding: 1rem;
+      
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+// Contact Form
+#contact {
+  .card {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+// About Page
+.about-section {
+  .feature-card {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    
+    i {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .map-container {
+    height: 400px;
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+
+// Interactive Elements
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  &.btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  &.btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+}
+
+// Footer
+footer {
+  margin-top: auto;
+  background-color: rgba(248, 249, 250, 0.95);
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  
+  .contact-item {
+    margin-bottom: 1rem;
+  }
+}
+
+// Utility Classes
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
