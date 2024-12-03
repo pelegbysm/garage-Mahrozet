@@ -1,0 +1,33 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "http://www.mahrozet.com/:path*",
+        "destination": "https://mahrozet.com/:path",
+        "type": 301
+      },
+      {
+        "source": "http://mahrozet.com/:path*",
+        "destination": "https://mahrozet.com/:path",
+        "type": 301
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*",
+        "headers": [
+          {
+            "key": "Strict-Transport-Security",
+            "value": "max-age=31536000; includeSubDomains"
+          }
+        ]
+      }
+    ]
+  }
+}
