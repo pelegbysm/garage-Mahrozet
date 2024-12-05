@@ -110,18 +110,19 @@ const AboutUs = () => {
                 </ul>
               </div>
               <div className="col-md-6">
-                <div className="map-container">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.698!2d34.793!3d32.050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b635b8b3f39%3A0x825d9c5c84e4f5b0!2z157Xlteo15XXltonIDM1LCDXqtecINeQ15HXmdeRINeZ16TXlQ!5e0!3m2!1siw!2sil!4v1623456789012!5m2!1siw!2sil"
-                    width="100%"
-                    height="300"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    title="מיקום המוסך"
-                  ></iframe>
-                </div>
-              </div>
+  <div className="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13529.277086219661!2d34.7564733!3d32.0335485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b3915be26b51%3A0x7eadc8a9a47fd0b!2z157Xldeh15og157Xl9eo15XXlteq!5e0!3m2!1siw!2sil!4v1733384686288!5m2!1siw!2sil"
+      width="100%"
+      height="300"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="מיקום המוסך"
+    />
+  </div>
+</div>
             </div>
           </div>
         </div>
