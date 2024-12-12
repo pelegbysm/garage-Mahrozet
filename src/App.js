@@ -10,8 +10,13 @@ import BodyRepair from './pages/BodyRepair';
 import AboutUs from './pages/AboutUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga4';
 
 function App() {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
   return (
     <div className="App">
       <Header />

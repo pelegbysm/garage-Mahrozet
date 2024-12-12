@@ -11,6 +11,14 @@
 # production
 /build
 
+@"
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+"@ | Add-Content .gitignore
+
 # misc
 .DS_Store
 .env.local
