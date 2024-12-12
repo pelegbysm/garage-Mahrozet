@@ -3,41 +3,49 @@
     <url>
         <loc>https://mahrozet.com/</loc>
         <lastmod>2024-01-01</lastmod>
+            <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://mahrozet.com/engines</loc>
         <lastmod>2024-01-01</lastmod>
+            <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mahrozet.com/engines-rebuild</loc>
         <lastmod>2024-01-01</lastmod>
+            <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mahrozet.com/truck-engines</loc>
         <lastmod>2024-01-01</lastmod>
+            <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mahrozet.com/transmission</loc>
         <lastmod>2024-01-01</lastmod>
+            <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mahrozet.com/turbo</loc>
         <lastmod>2024-01-01</lastmod>
+            <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mahrozet.com/body-repair</loc>
         <lastmod>2024-01-01</lastmod>
+            <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mahrozet.com/about</loc>
         <lastmod>2024-01-01</lastmod>
+            <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
