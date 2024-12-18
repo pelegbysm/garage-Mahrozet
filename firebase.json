@@ -14,13 +14,13 @@
     ],
     "redirects": [
       {
-        "source": "http://www.mahrozet.com/:path*",
-        "destination": "https://mahrozet.com/:path",
+        "source": "//:www.mahrozet.com/*",
+        "destination": "https://mahrozet.com/:splat",
         "type": 301
       },
       {
-        "source": "http://mahrozet.com/:path*",
-        "destination": "https://mahrozet.com/:path",
+        "source": "//mahrozet.com/*",
+        "destination": "https://mahrozet.com/:splat",
         "type": 301
       }
     ],

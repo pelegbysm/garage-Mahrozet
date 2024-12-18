@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -28,37 +27,40 @@ const Reviews = () => {
   }, []);
 
   if (loading) return <div className="text-center">טוען ביקורות...</div>;
-  if (error) return <div className="text-center text-red-500">{error}</div>;
+  if (error) return <div className="text-center text-danger">{error}</div>;
 
   return (
-    <Card className="w-full max-w-4xl mx-auto my-4">
-      <CardHeader>
-        <h2 className="text-2xl font-bold text-center">ביקורות לקוחות</h2>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-4">
+    <div className="card my-4">
+      <div className="card-header">
+        <h2 className="text-center">ביקורות לקוחות</h2>
+      </div>
+      <div className="card-body">
+        <div className="row">
           {reviews.map((review, index) => (
-            <div key={index} className="border-b p-4 last:border-b-0">
-              <div className="flex items-center mb-2">
-                <h3 className="font-semibold">{review.reviewer.displayName || 'אנונימי'}</h3>
-                <div className="mx-2">•</div>
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <i
-                      key={i}
-                      className={`fas fa-star ${
-                        i < review.starRating ? 'text-yellow-400' : 'text-gray-300'
-                      }`}
-                    />
-                  ))}
+            <div key={index} className="col-md-6 mb-3">
+              <div className="card h-100">
+                <div className="card-body">
+                  <div className="d-flex justify-content-between align-items-center mb-2">
+                    <h3 className="h5 mb-0">{review.reviewer.displayName || 'אנונימי'}</h3>
+                    <div className="stars">
+                      {[...Array(5)].map((_, i) => (
+                        <i
+                          key={i}
+                          className={`fas fa-star ${
+                            i < review.starRating ? 'text-warning' : 'text-muted'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="card-text">{review.comment || 'אין תגובה'}</p>
                 </div>
               </div>
-              <p className="text-gray-600">{review.comment || 'אין תגובה'}</p>
             </div>
           ))}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 };
 
