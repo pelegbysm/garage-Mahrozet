@@ -7,7 +7,7 @@ const Header = () => {
     <header className="text-center p-4">
       <img src="/images/logo.png" alt="לוגו מוסך מחרוזת" className="logo" />
       <div className="contact-buttons">
-        <a href="tel:+972504251000" className="btn btn-outline-primary">
+        <a href="tel:+972535800778" className="btn btn-outline-primary">
           הרימו טלפון
         </a>
         <a 
