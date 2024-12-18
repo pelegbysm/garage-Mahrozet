@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
 import ContactForm from '../components/ContactForm';
+import Reviews from '../components/Reviews';
 
 const Home = () => {
   const services = [
@@ -41,7 +42,6 @@ const Home = () => {
       link: "/truck-engines"
     }
   ];
-
 
   return (
     <main>
@@ -103,6 +103,10 @@ const Home = () => {
               </div>
             ))}
           </div>
+        </section>
+
+        <section className="reviews mt-5 mb-5">
+          <Reviews />
         </section>
 
         <ContactForm />

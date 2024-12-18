@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
+import Reviews from '../components/Reviews';
 
 const AboutUs = () => {
   const features = [
@@ -85,6 +86,10 @@ const AboutUs = () => {
         </div>
       </section>
 
+      <section className="reviews mb-5">
+        <Reviews />
+      </section>
+
       <section className="location-info mb-5">
         <div className="card">
           <div className="card-body">
@@ -110,19 +115,19 @@ const AboutUs = () => {
                 </ul>
               </div>
               <div className="col-md-6">
-  <div className="map-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13529.277086219661!2d34.7564733!3d32.0335485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b3915be26b51%3A0x7eadc8a9a47fd0b!2z157Xldeh15og157Xl9eo15XXlteq!5e0!3m2!1siw!2sil!4v1733384686288!5m2!1siw!2sil"
-      width="100%"
-      height="300"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="מיקום המוסך"
-    />
-  </div>
-</div>
+                <div className="map-container">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13529.277086219661!2d34.7564733!3d32.0335485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b3915be26b51%3A0x7eadc8a9a47fd0b!2z157Xldeh15og157Xl9eo15XXlteq!5e0!3m2!1siw!2sil!4v1733384686288!5m2!1siw!2sil"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="מיקום המוסך"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
